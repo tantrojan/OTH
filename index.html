@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Online Treasure Hunt</title>
+    <script type='text/javascript' src="./js/jquery.min.js"></script>
+    <script type='text/javascript' src="./js/parallax.min.js"></script>
+</head>
+<body>
+    <div id="scene">
+        <div data-depth="0.2">
+            <img src="./assets/green-leafs.png" style="transform:scale(1.2)" />
+        </div>
+        <div data-depth="0.6">My second Layer!</div>
+    </div>
+    <script type="text/javascript">
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+</body>
+</html>
