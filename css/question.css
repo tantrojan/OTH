@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Rancho');
+
+body{
+  background: url("../assets/homebg2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.oth-question{
+  background: url("../assets/ques.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 20px;
+  display: flex;
+  width: 600px;
+  height: 600px;
+  align-items: center;
+  color: brown;
+  font-size: 16px;
+}
