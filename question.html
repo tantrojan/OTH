@@ -1,60 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Online Treasure Hunt</title>
-    <script type='text/javascript' src="./js/jquery.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Online Treasure Hunt</title>
+  <script type='text/javascript' src="./js/jquery.min.js"></script>
 
-    <script type='text/javascript' src="./js/parallax.min.js"></script>
+  <!-- <script type='text/javascript' src="./js/parallax.min.js"></script> -->
 
-    <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" href="./css/header.css">
-    <link rel="stylesheet" type="text/css" href="./css/question.css">
+  <!-- <link rel="stylesheet" type="text/css" href="./css/main.css">  -->
+  <link rel="stylesheet" type="text/css" href="./css/header.css">
+  <link rel="stylesheet" type="text/css" href="./css/question.css">
 
 </head>
+
 <body>
-    <div class="page-header">
-        <div class="page-navbar">
-            <a class="page-logo" href="/">
-                <img src="./assets/logo.png">    
-            </a> 
-            <div class="page-logo">
-              <img src="./assets/line.png">
-            </div>
-            <a class="page-logo" href="/">
-                <img src="./assets/avskr.png">    
-            </a> 
-            <div class='buttons_group'>
-              <a href="" class="page-navbar-button">
-                <span>HOME</span>
-              </a>
-              <a href="" class="page-navbar-button">
-                <span>LEADERBOARD</span>
-              </a>
-              <a href="" class="page-navbar-button">
-                <span>LOGIN</span>
-              </a>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-      <div class="oth-question">
-        <div>
-          <h1>Rules:</h1>
-          <ul>
-            <li>You will be facing several challenging levels. The answer to a level may be a single word, multiword or digits.</li>
-            <li>Make sure you type in all the answers in lowercase characters without any space between the words.</li>
-            <li>Try to correlate hints provided in the tilte, slug, image and page source to find your way to answer.</li>
-            <li>Stay in touch with our official page which may help you in case you get stuck on any of the levels.</li>
-          </ul>
-        </div>
+
+  <!-- Navbar-->
+  <div class="page-header">
+    <div class="page-navbar">
+      <a class="page-logo" href="/">
+        <img src="./assets/logo.png">
+      </a>
+      <div class="page-logo">
+        <img src="./assets/line.png">
+      </div>
+      <a class="page-logo" href="/" alt="Aavishkar Logo">
+        <img src="./assets/avskr.png">
+      </a>
+      <div class='buttons_group'>
+        <a href="" class="page-navbar-button">
+          <span>USERNAME</span>
+        </a>
+        <a href="" class="page-navbar-button">
+          <span>RULES</span>
+        </a>
+        <a href="leaderboard.html" class="page-navbar-button">
+          <span>LEADERBOARD</span>
+        </a>
+        <a href="" class="page-navbar-button">
+          <span>LOGOUT</span>
+        </a>
       </div>
     </div>
-    <script type="text/javascript">
-        var scene = document.getElementById('scene');
-        var parallaxInstance = new Parallax(scene);
-    </script>
+  </div>
+
+  <!-- Container -->
+  <div class="container">
+
+    <!-- Questions -->
+    <div class="question-div">
+      <div class="question">
+      <p>Q.1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's </p>
+      </div>
+
+      <!--Audio Hint-->
+      <div class="hint">
+        <audio controls>
+          <source src="" type="">
+          Your browser does not support audio element.
+        </audio>
+      </div>
+
+
+      <h4>Write your answer here : </h6>
+
+
+        <!-- Answer Division -->
+        <form>
+          <input type="text" name="Answer" placeholder="Enter answer">
+          <br />
+          <br />
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+
+
+    <!-- Stats Division -->
+    <div class="text">
+      <div class="accuracy">
+        <p>Accuracy:</p>
+      </div>
+      <div class="ahead">
+        <p>Number of people crossed level:</p>
+      </div>
+    </div>
+ </div>
+
 </body>
+
 </html>
