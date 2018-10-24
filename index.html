@@ -11,9 +11,26 @@
   <link rel="stylesheet" type="text/css" href="./css/header2.css">
   <link rel="stylesheet" type="text/css" href="./css/home.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    window.addEventListener("load", function(event) {
+      var element = document.getElementById("preloader");
+      element.parentNode.removeChild(element);
+      $('body').removeClass('preloader-active');
+      $('#preloader').fadeOut(1000);
+    });
+  </script>
 
 </head>
-<body>
+<body class="preloader-active">
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <img src="./assets/ship_load.gif" />
+  </div>
+  <!--  -->
+
+
+
   <audio autoplay loop="true"> 
     <source src="./music/home.mp3" />
   </audio>
@@ -79,6 +96,8 @@
       </div>
 
       <script>
+
+
         const bg = document.querySelector('.background-image');
         const windowWidth = window.innerWidth / 5;
         const windowHeight = window.innerHeight / 5 ;
