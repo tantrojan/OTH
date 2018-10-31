@@ -51,20 +51,11 @@
   <div class="container">
 
     <!-- Question Box Start-->
-    <svg class="question-background">
-      <defs>
-        <filter id="filter">
-          <feTurbulence baseFrequency="0.12" numOctaves="2" type="fractalNoise" result="result1" />
-          <feDisplacementMap in2="result1" scale="99" result="result2" xChannelSelector="R" in="SourceGraphic" />
-          <feComposite in2="result2" in="SourceGraphic" operator="atop" result="fbSourceGraphic" />
-        </filter>
-      </defs>
-      <rect fill="rgba(119, 79, 14, 0.69)" filter="url(#filter)" class="question-rect"  />
-      <!-- Questions -->
-      <foreignObject x="0" y="0" class="question-box">
+      <div class="question-box">
         <div class="question">
           <p>Q.1. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
           industry's </p>
+
         </div>
 
         <!--Audio Hint-->
@@ -86,8 +77,7 @@
           <br />
           <input type="submit" value="Submit">
         </form>
-      </foreignObject>
-    </svg>
+      </div>
     <!-- Question Box End -->
 
 
